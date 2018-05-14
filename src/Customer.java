@@ -7,7 +7,7 @@ class Customer {
 
 	public Customer(String name) {
 		_name = name;
-	};
+	}
 
 	public void addRental(Rental arg) {
 		_rentals.addElement(arg);
@@ -15,7 +15,7 @@ class Customer {
 
 	public String getName() {
 		return _name;
-	};
+	}
 
 	private double getTotalCharge() {
 		double result = 0;
