@@ -2,7 +2,7 @@ package Main;
 import java.util.Enumeration;
 import java.util.Vector;
 
-class Customer {
+public class Customer {
 	private String name;
 	private Vector _rentals = new Vector();
 
