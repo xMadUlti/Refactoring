@@ -1,16 +1,16 @@
 public class Program {
 	public static void main(String args[]) {
 		String result;
-		System.out.println("Welcome to the Movie Store");
-		Movie m1 = new Movie("movie1", 1);
-		Movie m2 = new Movie("movie2", 2);
-		Rental r1 = new Rental(m1, 10);
-		Rental r2 = new Rental(m2, 5);
-		Customer c1 = new Customer("joe");
-		c1.addRental(r1);
-		c1.addRental(r2);
-		System.out.println("Let's get the Statement");
-		result = c1.statement();
+		System.out.println("This is the movie store:");
+		Movie aMovie = new Movie("Movie_One", 1);
+		Movie bMovie = new Movie("Movie_Two", 2);
+		Rental aRental = new Rental(aMovie, 10);
+		Rental bRental = new Rental(bMovie, 5);
+		Customer customer = new Customer("Alex");
+		customer.addRental(aRental);
+		customer.addRental(bRental);
+		System.out.println("The statement is:");
+		result = customer.statement();
 		System.out.println(result);
 	}
 }
